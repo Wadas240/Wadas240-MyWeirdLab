@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d35400; /* สีส้มอิฐๆ ให้ดูหลอนนิดๆ */
+}
+
+.face {
+    display: flex;
+    gap: 30px; /* ระยะห่างระหว่างตา 2 ข้าง */
+}
+
+.eye {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%; /* ทำเป็นวงกลม */
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.pupil {
+    width: 40px;
+    height: 40px;
+    background-color: #2c3e50; /* สีลูกตาดำ */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* จัดให้อยู่กลางเบ้าตา */
+    border: 5px solid #95a5a6; /* ขอบตาเล็กน้อย */
+}

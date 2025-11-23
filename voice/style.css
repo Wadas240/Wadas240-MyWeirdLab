@@ -1,0 +1,59 @@
+body {
+    background-color: #000;
+    color: #0f0; /* สีเขียว Hacker */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid #0f0;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    background-color: #111;
+}
+
+h1 { text-align: center; margin-top: 0; }
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background: #222;
+    color: #fff;
+    border: 1px solid #0f0;
+    padding: 10px;
+    box-sizing: border-box; /* ไม่ให้กล่องล้น */
+    font-size: 16px;
+    resize: none; /* ห้ามดึงขยาย */
+}
+
+.control {
+    margin: 20px 0;
+}
+
+input[type=range] {
+    width: 100%;
+    accent-color: #0f0; /* เปลี่ยนสีตัวเลื่อนเป็นสีเขียว */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0f0;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: white;
+    box-shadow: 0 0 15px white;
+}

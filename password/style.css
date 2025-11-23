@@ -1,0 +1,115 @@
+body {
+    background-color: #1e272e;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #2f3640;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 380px;
+    border-radius: 15px;
+}
+
+h2 { 
+    text-align: center; 
+    margin: 0 0 20px; 
+    color: #00d2d3;
+}
+
+/* กล่องแสดงผล */
+.result-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 60px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #576574;
+}
+
+#result {
+    word-break: break-all; /* ตัดคำถ้ามันยาวเกิน */
+    font-family: 'Courier New', Courier, monospace; /* ฟอนต์เครื่องพิมพ์ดีดจะดูรหัสง่าย */
+    font-size: 18px;
+    color: #00d2d3;
+}
+
+.btn {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover { color: #00d2d3; }
+
+/* แถบวัดพลัง */
+.strength-container {
+    margin-bottom: 20px;
+}
+.strength-bar {
+    height: 5px;
+    width: 100%;
+    background-color: #576574;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+#strength-text {
+    font-size: 12px;
+    text-align: right;
+    margin: 0;
+    color: #8395a7;
+}
+
+/* Settings */
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.setting.advanced {
+    color: #ff9f43; /* สีส้มสำหรับตั้งค่าพิเศษ */
+    font-size: 14px;
+}
+
+hr { border-color: #576574; margin: 15px 0; }
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+/* ปุ่มใหญ่ */
+.btn-large {
+    width: 100%;
+    background-color: #00d2d3;
+    color: #222;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 #01a3a4; /* เงาปุ่มแบบแข็ง */
+}
+
+.btn-large:active {
+    transform: translateY(4px); /* เอฟเฟกต์ปุ่มยุบ */
+    box-shadow: none;
+}

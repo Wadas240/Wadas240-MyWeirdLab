@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #1a1a2e; /* สีน้ำเงินเข้ม */
+    font-family: sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+.hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.3); /* สีจางๆ */
+    font-size: 2em;
+    pointer-events: none; /* เพื่อให้คลิกทะลุข้อความได้ */
+    user-select: none;
+}

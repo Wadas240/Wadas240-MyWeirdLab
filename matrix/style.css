@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* ซ่อน Scrollbar */
+    background-color: black;
+}
+
+canvas {
+    display: block; /* แก้บั๊กขอบขาวเล็กๆ */
+}

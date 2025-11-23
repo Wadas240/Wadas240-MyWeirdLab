@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="radio-box">
+        <h1>📡 TOP SECRET</h1>
+        
+        <div class="screen">
+            <label>ข้อความ (ภาษาอังกฤษ):</label>
+            <input type="text" id="textInput" placeholder="HELLO WORLD" autocomplete="off">
+            
+            <label>รหัสมอร์ส:</label>
+            <div id="morseOutput" class="output">.... . .-.. .-.. --- / .-- --- .-. .-.. -..</div>
+        </div>
+
+        <div class="controls">
+            <button id="translateBtn">แปลรหัส</button>
+            <button id="playBtn">🔊 ส่งเสียงสัญญาณ</button>
+        </div>
+        
+        <p class="note">*รองรับเฉพาะ A-Z และ 0-9</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

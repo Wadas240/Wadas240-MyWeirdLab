@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh; /* สูงเต็มจอ */
+    display: flex; /* ใช้ Flexbox เพื่อจัดกึ่งกลางง่ายๆ */
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec; /* สีชมพูอ่อนๆ ดูเป็นมิตร */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* ห้ามให้มี Scroll bar เดี๋ยวปุ่มหนีไปไกลเกิน */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 { color: #d81b60; }
+
+button {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #00c853; /* สีเขียวเงินทอง */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+    /* สำคัญมาก: ต้องตั้งเป็น absolute เพื่อให้ขยับไปไหนก็ได้ในจอ */
+    position: absolute; 
+    transition: 0.2s ease; /* ใส่ Animation ให้มันวาปแบบสมูทนิดนึง */
+}

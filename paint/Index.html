@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Paint</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="toolbar">
+        <div class="tool-group">
+            <label>สี:</label>
+            <input type="color" id="colorPicker" value="#00d2d3">
+            <button id="rainbowBtn" class="active">🌈 รุ้ง</button>
+        </div>
+
+        <div class="tool-group">
+            <label>ขนาด:</label>
+            <input type="range" id="brushSize" min="1" max="50" value="10">
+        </div>
+
+        <div class="tool-group">
+            <button id="eraserBtn"><i class="fas fa-eraser"></i> ลบ</button>
+            <button id="clearBtn"><i class="fas fa-trash-alt"></i> ล้าง</button>
+            <button id="saveBtn" class="save"><i class="fas fa-download"></i> บันทึก</button>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

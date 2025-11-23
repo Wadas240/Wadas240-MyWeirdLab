@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🔐 เครื่องสร้างรหัสผ่าน Pro</h2>
+        
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard" title="กดเพื่อคัดลอก">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+
+        <div class="strength-container">
+            <div id="strength-bar" class="strength-bar"></div>
+            <p id="strength-text">ระดับ: ...</p>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label>ความยาวรหัสผ่าน (4-50)</label>
+                <input type="number" id="length" min="4" max="50" value="16">
+            </div>
+            
+            <div class="setting">
+                <label>เอาตัวพิมพ์ใหญ่ (A-Z)</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label>เอาตัวพิมพ์เล็ก (a-z)</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label>เอาตัวเลข (0-9)</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label>เอาสัญลักษณ์ (!@#$)</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+
+            <hr> <div class="setting advanced">
+                <label title="เอาตัว i, l, 1, L, o, 0, O ออก">🚫 ตัดตัวที่หน้าตาคล้ายกันออก</label>
+                <input type="checkbox" id="exclude-similar">
+            </div>
+            <div class="setting advanced">
+                <label title="เช่น abc-def-ghi">➖ ใส่ขีดคั่นให้อ่านง่าย</label>
+                <input type="checkbox" id="add-hyphens">
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            🚀 สร้างรหัสผ่าน
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
